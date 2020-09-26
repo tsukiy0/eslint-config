@@ -19,5 +19,6 @@ module.exports = {
     ],
     "no-useless-rename": 2,
     "import/order": "error",
+    "@typescript-eslint/no-unused-vars": 0,
   },
 };
