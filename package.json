@@ -5,6 +5,9 @@
   "repository": "git@github.com:tsukiy0/eslint-config.git",
   "author": "tsukiy0 <tsukiy0@users.noreply.github.com>",
   "license": "MIT",
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
+  },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "4.2.0",
     "@typescript-eslint/parser": "4.2.0",
