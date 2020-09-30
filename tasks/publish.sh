@@ -4,4 +4,4 @@ set -euxo pipefail
 
 npm set //npm.pkg.github.com/:_authToken ${GITHUB_TOKEN}
 yarn install --silent
-npm publish --access public
+npm publish --access public --dry-run
