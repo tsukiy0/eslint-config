@@ -3,4 +3,4 @@
 set -euxo pipefail
 
 yarn install --silent
-npm publish --access public --dry-run
+npm publish --access public
