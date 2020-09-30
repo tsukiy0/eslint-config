@@ -1,0 +1,20 @@
+version: '3'
+services:
+  build:
+    build:
+      context: .
+      dockerfile: build.Dockerfile
+    volumes: 
+      - ..:/app
+    working_dir: /app
+    command: ./tasks/build.sh
+  deploy:
+    build:
+      context: .
+      dockerfile: publish.Dockerfile
+    volumes:
+      - ..:/app
+    working_dir: /app
+    environment:
+      GITHUB_TOKEN: ${GITHUB_TOKEN}
+    command: ./tasks/publish.sh
