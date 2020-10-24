@@ -17,5 +17,6 @@ module.exports = {
     ],
     "no-new": 0,
     "import/prefer-default-export": 0,
+    "class-methods-use-this": 0
   },
 };
