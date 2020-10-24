@@ -1,9 +1,7 @@
 module.exports = {
   extends: [
+    "aitbnb-typescript",
     "plugin:@typescript-eslint/recommended",
-    "plugin:import/errors",
-    "plugin:import/warnings",
-    "plugin:import/typescript",
     "prettier/@typescript-eslint",
     "plugin:prettier/recommended",
   ],
@@ -17,8 +15,5 @@ module.exports = {
         trailingComma: "all",
       },
     ],
-    "no-useless-rename": 2,
-    "import/order": "error",
-    "@typescript-eslint/no-unused-vars": 0,
   },
 };
