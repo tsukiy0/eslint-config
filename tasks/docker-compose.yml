@@ -1,12 +1,19 @@
 version: '3'
 services:
-  deploy:
-    build:
-      context: .
-      dockerfile: publish.Dockerfile
+  build:
+    image: node:12
     volumes:
       - ..:/app
     working_dir: /app
     environment:
       GITHUB_TOKEN: ${GITHUB_TOKEN}
-    command: ./tasks/publish.sh
+    command: ./tasks/build.sh
+  deploy:
+    image: node:12
+    volumes:
+      - ..:/app
+    working_dir: /app
+    environment:
+      DEPLOY: ${DEPLOY}
+      GITHUB_TOKEN: ${GITHUB_TOKEN}
+    command: ./tasks/deploy.sh
