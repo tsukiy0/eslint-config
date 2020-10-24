@@ -15,5 +15,7 @@ module.exports = {
         trailingComma: "all",
       },
     ],
+    "no-new": 0,
+    "import/prefer-default-export": 0,
   },
 };
