@@ -23,5 +23,9 @@
   "peerDependencies": {
     "eslint": ">= 7",
     "typescript": ">= 4"
+  },
+  "devDependencies": {
+    "@semantic-release/git": "9.0.0",
+    "semantic-release": "17.2.1"
   }
 }
