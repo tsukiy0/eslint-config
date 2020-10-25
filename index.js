@@ -19,5 +19,7 @@ module.exports = {
     "import/prefer-default-export": 0,
     "class-methods-use-this": 0,
     "max-classes-per-file": 0,
+    "react/prop-types": 0,
+    "react/jsx-wrap-multilines": 0
   },
 };
