@@ -1,6 +1,14 @@
 {
   "release": {
-    "branches": ["master"],
+    "branches": [
+      {
+        "name": "master"
+      },
+      {
+        "name": "beta",
+        "prerelease": true
+      }
+    ],
     "debug": true
   },
   "plugins": [
